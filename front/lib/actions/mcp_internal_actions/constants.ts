@@ -40,6 +40,7 @@ import { INCLUDE_DATA_SERVER } from "@app/lib/api/actions/servers/include_data/m
 import { INTERACTIVE_CONTENT_SERVER } from "@app/lib/api/actions/servers/interactive_content/metadata";
 import { JIRA_SERVER } from "@app/lib/api/actions/servers/jira/metadata";
 import { JIT_TESTING_SERVER } from "@app/lib/api/actions/servers/jit_testing/metadata";
+import { LUCCA_SERVER } from "@app/lib/api/actions/servers/lucca/metadata";
 import { LUMA_SERVER } from "@app/lib/api/actions/servers/luma/metadata";
 import { MICROSOFT_DRIVE_SERVER } from "@app/lib/api/actions/servers/microsoft_drive/metadata";
 import { MICROSOFT_EXCEL_SERVER } from "@app/lib/api/actions/servers/microsoft_excel/metadata";
@@ -171,6 +172,7 @@ export const AVAILABLE_INTERNAL_MCP_SERVER_NAMES = [
   "interactive_content",
   "slideshow",
   "jira",
+  "lucca",
   "luma",
   "microsoft_drive",
   "microsoft_excel",
@@ -1113,6 +1115,18 @@ export const INTERNAL_MCP_SERVERS = {
     tools_retry_policies: undefined,
     timeoutMs: undefined,
     metadata: CLARI_COPILOT_SERVER,
+  },
+  lucca: {
+    id: 1034,
+    availability: "manual",
+    allowMultipleInstances: true,
+    isRestricted: ({ featureFlags }) => !featureFlags.includes("lucca_mcp"),
+    isPreview: true,
+    requiresBearerToken: true,
+    tools_arguments_requiring_approval: undefined,
+    tools_retry_policies: undefined,
+    timeoutMs: undefined,
+    metadata: LUCCA_SERVER,
   },
   plan_mode: {
     id: 1032,

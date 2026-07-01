@@ -75,6 +75,7 @@
     { "name": "jit_testing", "id": 1016 },
     { "name": "front", "id": 1018 },
     { "name": "poke", "id": 1027 },
-    { "name": "clari_copilot", "id": 1030 }
+    { "name": "clari_copilot", "id": 1030 },
+    { "name": "lucca", "id": 1034 }
   ]
 }

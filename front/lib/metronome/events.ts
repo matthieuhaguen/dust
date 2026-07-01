@@ -146,6 +146,7 @@ const TOOL_CATEGORY_MAP: Record<InternalMCPServerNameType, ToolCategory> = {
   zendesk: "advanced",
   ashby: "advanced",
   clari_copilot: "advanced",
+  lucca: "advanced",
 };
 
 export function getToolCategory(

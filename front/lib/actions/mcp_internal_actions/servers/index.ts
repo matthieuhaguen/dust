@@ -38,6 +38,7 @@ import { default as includeDataServer } from "@app/lib/api/actions/servers/inclu
 import { default as interactiveContentServer } from "@app/lib/api/actions/servers/interactive_content";
 import { default as jiraServer } from "@app/lib/api/actions/servers/jira";
 import { default as jitTestingServer } from "@app/lib/api/actions/servers/jit_testing";
+import { default as luccaServer } from "@app/lib/api/actions/servers/lucca";
 import { default as lumaServer } from "@app/lib/api/actions/servers/luma";
 import { default as microsoftDriveServer } from "@app/lib/api/actions/servers/microsoft_drive";
 import { default as microsoftExcelServer } from "@app/lib/api/actions/servers/microsoft_excel";
@@ -198,6 +199,8 @@ export async function getInternalMCPServer(
       return databricksServer(auth, agentLoopContext);
     case "jira":
       return jiraServer(auth, agentLoopContext);
+    case "lucca":
+      return luccaServer(auth, agentLoopContext);
     case "luma":
       return lumaServer(auth, agentLoopContext);
     case "microsoft_drive":

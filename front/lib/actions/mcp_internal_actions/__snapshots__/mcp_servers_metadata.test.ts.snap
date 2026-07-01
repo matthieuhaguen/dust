@@ -346,6 +346,10 @@ exports[`MCP Servers Metadata Snapshot > should have stable tool stakes across a
   "jit_testing": {
     "jit_all_optionals_and_defaults": "high",
   },
+  "lucca": {
+    "get_my_info": "never_ask",
+    "list_users": "never_ask",
+  },
   "luma": {
     "add_guests": "low",
     "create_event": "high",

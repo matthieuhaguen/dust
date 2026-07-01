@@ -34,6 +34,13 @@ const SERVER_TOKEN_LABELS: Record<string, TokenFieldLabel> = {
       "You can generate an API token from your Front settings under Developers > API tokens.",
   },
 
+  lucca: {
+    label: "Lucca API Credentials",
+    tooltip:
+      "Enter your Lucca API key and your tenant subdomain (the {subdomain} in https://{subdomain}.ilucca.net). You can generate an API key in Lucca under Administration > API keys.",
+    predefinedHeaders: ["X-Lucca-Api-Key", "X-Lucca-Subdomain"],
+    showBearerTokenSection: false,
+  },
   salesloft: {
     label: "Salesloft API Key",
     placeholder: "Paste your Salesloft API key",

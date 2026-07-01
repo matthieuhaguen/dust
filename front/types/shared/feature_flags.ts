@@ -254,6 +254,11 @@ export const WHITELISTABLE_FEATURES_CONFIG = {
       "Enable the Clari Copilot MCP server for call transcript and summary access.",
     stage: "on_demand",
   },
+  lucca_mcp: {
+    description:
+      "Enable the Lucca MCP server for HR data access (employees, directory).",
+    stage: "on_demand",
+  },
   plan_mode: {
     description:
       "Enable the Plan Mode skill: agents maintain a live plan.md for non-trivial tasks, with an optional human-approval checkpoint.",

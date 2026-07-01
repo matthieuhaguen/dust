@@ -718,6 +718,7 @@ const WhitelistableFeaturesSchema = FlexibleEnumSchema<
   | "labs_mcp_actions_dashboard"
   | "labs_transcripts"
   | "legacy_dust_apps"
+  | "lucca_mcp"
   | "netsuite_mcp"
   | "nested_skills"
   | "noop_model_feature"
